@@ -178,8 +178,7 @@ const AddButton = ({ onClick, text }: { onClick: () => void; text: string }) => 
         <PlusCircleIcon className="h-5 w-5"/> {text}
     </button>
 );
-// FIX: Refactored DynamicListItem to use React.FC and a separate props interface.
-// This ensures TypeScript properly recognizes it as a component and handles the special `key` prop correctly, resolving type errors during list rendering.
+
 interface DynamicListItemProps {
     id: string;
     onRemove: (id: string) => void;

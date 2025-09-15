@@ -1,9 +1,8 @@
-
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import { ApplicantData } from '../types';
 
-// FIX: Replaced interface extension with a type intersection to ensure all jsPDF methods are inherited correctly.
+// Use a type intersection to ensure all jsPDF methods are inherited correctly.
 // This resolves errors where methods like `setFontSize`, `text`, etc., were not found on the extended type.
 type jsPDFWithAutoTable = jsPDF & {
   autoTable: (options: any) => jsPDF;
