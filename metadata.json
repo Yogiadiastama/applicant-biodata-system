@@ -1,0 +1,7 @@
+{
+  "name": "Applicant Biodata System",
+  "description": "A professional web application for collecting job applicant data. It features a comprehensive form, responsive design, and options to export data to PDF and Excel formats.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
